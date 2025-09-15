@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolivia en Llamas | Crisis Ambiental 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Bolivia Está Ardiente</h1>
+            <p>La Amazonía boliviana se consume en silencio. Mientras todos miran hacia otro lado, el fuego avanza.</p>
+            <a href="#slider" class="btn-primary">Ver la Realidad</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- BARRA DE ALERTA -->
+    <div class="alert-bar">
+        🚨 Más de 83,000 hectáreas quemadas en 2025. Más de 10 millones de animales muertos en 2024.
+    </div>
+
+    <!-- SLIDER INFORMATIVO -->
+    <section id="slider" class="slider-section">
+        <h2 class="section-title">Zonas Devastadas</h2>
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="santacruz.jpg" alt="Santa Cruz" class="slide-image">
+                <div class="slide-content">
+                    <h3>Santa Cruz</h3>
+                    <p><strong>70,000 hectáreas quemadas</strong></p>
+                    <p>El Parque Nacional Noel Kempff Mercado, hogar de jaguares y especies endémicas, ha sido gravemente afectado.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="tarija.jpg" alt="Tarija" class="slide-image">
+                <div class="slide-content">
+                    <h3>Tarija</h3>
+                    <p><strong>6,420 hectáreas afectadas</strong></p>
+                    <p>La Reserva de la Cordillera de Sama, zona de gran biodiversidad andina, está en riesgo crítico.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="beni.png" alt="Beni" class="slide-image">
+                <div class="slide-content">
+                    <h3>Beni</h3>
+                    <p><strong>4,314 hectáreas destruidas</strong></p>
+                    <p>Áreas protegidas y comunidades indígenas han perdido sus territorios y recursos ancestrales.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="cochabamba.jpg" alt="Cochabamba" class="slide-image">
+                <div class="slide-content">
+                    <h3>Cochabamba</h3>
+                    <p><strong>2,052 hectáreas calcinadas</strong></p>
+                    <p>El Parque Nacional Carrasco, pulmón andino del país, sufre pérdidas irreversibles.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles del slider -->
+        <div class="slider-controls">
+            <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE IMPACTO -->
+    <section class="impact-section">
+        <h2 class="section-title">El Daño es Real</h2>
+        <div class="impact-grid">
+            <div class="impact-card">
+                <i class="fas fa-tree"></i>
+                <h3>Ecosistemas Destruidos</h3>
+                <p>La Chiquitanía está desapareciendo. El 80% de los incendios afectan pastizales y bosques críticos.</p>
+            </div>
+            <div class="impact-card">
+                <i class="fas fa-paw"></i>
+                <h3>Fauna en Peligro</h3>
+                <p>Más de 10 millones de animales han muerto. Jaguares, tapires y especies endémicas están desapareciendo.</p>
+            </div>
+            <div class="impact-card">
+                <i class="fas fa-lungs"></i>
+                <h3>Salud Pública</h3>
+                <p>El humo tóxico afecta la calidad del aire. Niños y ancianos sufren problemas respiratorios.</p>
+            </div>
+            <div class="impact-card">
+                <i class="fas fa-globe-americas"></i>
+                <h3>Cambio Climático</h3>
+                <p>Bolivia pierde su capacidad de capturar CO₂. La destrucción acelera el calentamiento global.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CAUSAS -->
+    <section class="causes-section">
+        <h2 class="section-title">¿Quiénes son los Responsables?</h2>
+        <div class="causes-grid">
+            <div class="cause-card">
+                <i class="fas fa-fire"></i>
+                <h3>Quemas Malintencionadas</h3>
+                <span class="percentage">66%</span>
+                <p>La mayoría de los incendios son provocados para “limpiar” terrenos sin control.</p>
+            </div>
+            <div class="cause-card">
+                <i class="fas fa-tractor"></i>
+                <h3>Expansión Agropecuaria</h3>
+                <span class="percentage">34%</span>
+                <p>Quemas para ampliar la frontera de la soya y la ganadería intensiva.</p>
+            </div>
+            <div class="cause-card">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Intereses Económicos</h3>
+                <span class="percentage">$$$</span>
+                <p>Grandes corporaciones detrás de la deforestación para monocultivos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE LLAMADO A LA CONCIENCIA -->
+    <section class="awareness-section">
+        <h2 class="section-title">No Podemos Querernos Cruzados de Brazos</h2>
+        <div class="awareness-content">
+            <div class="awareness-item">
+                <div class="number">1</div>
+                <div class="text">
+                    <h3>Difunde la Emergencia</h3>
+                    <p>Comparte esta información. Cada persona que se entere es una voz más para presionar.</p>
+                </div>
+            </div>
+            <div class="awareness-item">
+                <div class="number">2</div>
+                <div class="text">
+                    <h3>Exige Acción</h3>
+                    <p>Presiona a las autoridades. No más declaraciones vacías. Queremos resultados reales.</p>
+                </div>
+            </div>
+            <div class="awareness-item">
+                <div class="number">3</div>
+                <div class="text">
+                    <h3>Apoya a los Afectados</h3>
+                    <p>Las comunidades indígenas y campesinas están en primera línea. Apoya sus organizaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <h3>🔥 La Lucha por Nuestro Futuro es Ahora 🔥</h3>
+        <p>Comparte antes de que sea demasiado tarde. La emergencia es real.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="footer-note">
+            Esta página fue creada para generar conciencia. Los datos son reales. La emergencia es urgente.
+        </p>
+    </footer>
+
+    <!-- SCRIPT (lo cargaremos después) -->
+    <script src="script.js"></script>
+</body>
+</html>
