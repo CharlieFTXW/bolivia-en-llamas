@@ -450,3 +450,182 @@ body {
         font-size: 1.8rem;
     }
 }
+/* ===================================
+   NUEVOS ESTILOS RESPONSIVOS
+   =================================== */
+
+/* Galería uniforme */
+.uniform-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.uniform-gallery img {
+    width: 100%;
+    height: 250px;        /* alto fijo */
+    object-fit: cover;    /* recorta sin deformar */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.uniform-gallery img:hover {
+    transform: scale(1.02);
+}
+
+/* Videos responsivos */
+.video-wrapper {
+    max-width: 800px;
+    margin: 2rem auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Imagen de estadística */
+.stats-wrapper {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.stats-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* ===================================
+   GALERÍA UNIFORME CON ANIMACIONES
+   =================================== */
+
+.uniform-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.image-card {
+    position: relative;
+    width: 100%;
+    height: 260px;              /* tamaño fijo real */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px #ff6b35, 0 0 20px rgba(255, 107, 53, 0.5);
+    animation: glow 3s infinite alternate;
+    transition: transform .4s;
+}
+
+.image-card:hover {
+    transform: scale(1.03);
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* recorta sin deformar */
+    cursor: pointer;
+    transition: filter .4s;
+}
+
+@keyframes glow {
+    0%   { box-shadow: 0 0 0 2px #ff6b35, 0 0 20px rgba(255, 107, 53, 0.5); }
+    100% { box-shadow: 0 0 0 4px #ff4500, 0 0 30px rgba(255, 69, 0, 0.8); }
+}
+
+/* Videos responsivos */
+.video-wrapper {
+    max-width: 800px;
+    margin: 2.5rem auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+/* ===================================
+   AJUSTES MÓVILES - IMAGENES
+   =================================== */
+
+@media (max-width: 600px) {
+    .uniform-gallery {
+        grid-template-columns: 1fr;      /* una sola columna */
+        gap: 2rem;
+        padding: 0 1rem;                 /* margen lateral */
+    }
+
+    .image-card {
+        height: 260px;                   /* mismo alto */
+        max-width: 320px;                /* ⛔ no más ancho que esto */
+        margin: 0 auto;                  /* centrado */
+        box-shadow: 0 0 0 2px #ff6b35, 0 0 15px rgba(255, 107, 53, 0.6);
+    }
+}
+
+/* ===================================
+   TABLA CENTRADA
+   =================================== */
+
+.table-wrapper {
+    max-width: 700px;          /* ⛔ no más ancho que esto */
+    margin: 0 auto;            /* centrado horizontal */
+    overflow-x: auto;          /* scroll lateral si es muy angosta */
+}
+
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+/* ===================================
+   ESTADÍSTICAS – AJUSTE EXACTO A CADA IMAGEN
+   =================================== */
+
+.stats-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;   /* ⬅️ alinea arriba, evita cubos */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.stat-card {
+    max-width: 100%;
+    width: auto;               /* se adapta al ancho real del PNG */
+    height: auto;              /* se adapta al alto real del PNG */
+    border-radius: 12px;
+    box-shadow: 0 0 0 2px #ff6b35, 0 0 20px rgba(255, 107, 53, 0.6);
+    animation: glow 3s infinite alternate;
+    transition: transform .4s;
+    overflow: visible;         /* ⬅️ sin recorte */
+}
+
+.stat-card:hover {
+    transform: scale(1.015);
+}
+
+.stat-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;              /* imagen completa, sin recorte */
+    border-radius: 12px;
+}
+
+/* Móvil – centrado y ancho máximo */
+@media (max-width: 600px) {
+    .stat-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -102,21 +102,43 @@
     </section>
 
     <!-- GALERÍA DE IMÁGENES DE ALTO IMPACTO -->
-    <section class="gallery-section">
-        <h2 class="section-title">Imágenes de los Animales</h2>
-        <p style="text-align:center; color:#ffcc00; font-weight:bold;">
-            ⚠️ Imágenes de alto impacto visual, no aptas para personas sensibles. Haz clic para ver.
-        </p>
-        <div class="blurred-gallery">
-            <img src="animal1.jpg" alt="Animal calcinado" class="blurred-image" onclick="revealImage(this)">
-            <img src="animal2.jpg" alt="Animal calcinado" class="blurred-image" onclick="revealImage(this)">
-            <img src="animal3.jpg" alt="Animal calcinado" class="blurred-image" onclick="revealImage(this)">
+<section class="gallery-section">
+    <h2 class="section-title">Imágenes de los Animales</h2>
+    <p style="text-align:center; color:#ffcc00; font-weight:bold;">
+        ⚠️ Imágenes de alto impacto visual, no aptas para personas sensibles.
+    </p>
+
+    <div class="uniform-gallery">
+        <div class="image-card">
+            <img src="img_an (1).jpeg" alt="Animal calcinado" class="blurred-image" onclick="revealImage(this)">
         </div>
-    </section>
+        <div class="image-card">
+            <img src="img_an (2).jpeg" alt="Animal calcinado" class="blurred-image" onclick="revealImage(this)">
+        </div>
+        <div class="image-card">
+            <img src="img_an (3).jpeg" alt="Animal calcinado" class="blurred-image" onclick="revealImage(this)">
+        </div>
+        <div class="image-card">
+            <img src="img_an (4).jpeg" alt="Animal calcinado" class="blurred-image" onclick="revealImage(this)">
+        </div>
+        <div class="image-card">
+            <img src="img_an (5).jpeg" alt="Animal calcinado" class="blurred-image" onclick="revealImage(this)">
+        </div>
+    </div>
+
+    <!-- VIDEOS RESPONSIVOS -->
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Video 1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Video 2" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
 
     <!-- TABLA COMPARATIVA -->
     <section class="comparison-section">
         <h2 class="section-title">Comparativa de Pérdidas</h2>
+        <div class="table-wrapper">
         <table>
             <thead>
                 <tr>
@@ -128,7 +150,7 @@
             <tbody>
                 <tr>
                     <td>Hectáreas perdidas</td>
-                    <td>83,000</td>
+                    <td>Mas de 10 millones</td>
                     <td>90,000+</td>
                 </tr>
                 <tr>
@@ -143,10 +165,26 @@
                 </tr>
             </tbody>
         </table>
+        </div>
+    </section>
         <p style="text-align:center; margin-top:1.5rem; font-style:italic;">
             Una de las mayores pérdidas de nuestra Madre Tierra en comparativa con nuestras pérdidas actuales. ¿Esperaremos más muertes? ¿Esperaremos más pérdidas? ¿Volveremos a tener una salud precaria?
         </p>
     </section>
+    
+    <!-- ESTADÍSTICA VISUAL – ESTILO GALERÍA -->
+<section class="stats-image-section">
+    <h2 class="section-title">Estadística Visual</h2>
+
+    <div class="uniform-gallery stats-gallery">
+        <div class="image-card stat-card">
+            <img src="est1.png" alt="Hectáreas perdidas 2024 vs 2025"class="scroll-wide">
+        </div>
+        <div class="image-card stat-card">
+            <img src="est2.png" alt="Animales afectados por departamento"class="scroll-wide">
+        </div>
+    </div>
+</section>
 
     <!-- SECCIÓN DE CONCIENCIA -->
     <section class="awareness-section">
@@ -186,8 +224,8 @@
         </p>
         <p style="text-align:center; margin-top:2rem; font-weight:bold;">
             Gran marcha en favor de tomar acciones contra los incendios<br>
-            📅 27 de septiembre de 2025<br>
-            🕠 17:00 en la Plz. Avaroa
+            📅 03 de octubre de 2025<br>
+            🕠 17:00 en la Plaza Avaroa
         </p>
     </section>
 
